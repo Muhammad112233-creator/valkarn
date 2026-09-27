@@ -1,0 +1,52 @@
+# --- OS noise -------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# --- Editors --------------------------------------------------------------
+.vscode/
+.idea/
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# --- Dependencies & build output (only if you add tooling later) ----------
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+dist/
+build/
+.cache/
+.parcel-cache/
+.temp/
+.tmp/
+
+# --- Env & secrets --------------------------------------------------------
+.env
+.env.*
+!.env.example
+
+# --- Logs -----------------------------------------------------------------
+*.log
+npm-debug.log*
+yarn-error.log*
+
+# --- Working files you don't want published -------------------------------
+/drafts/
+/_source/
+*.psd
+*.ai
+*.sketch
+*.fig
+*.afdesign
+*.xcf
+
+# Keep .nojekyll tracked — GitHub Pages needs it.
+!.nojekyll
