@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Valkarn | The Saga of the Nine Gates</title>
+    <meta
+      name="description"
+      content="Nine gates, seventy-four volumes, one long road north. The official home of the Valkarn saga: the world, the chronicles, the characters, the makers and the fellowship."
+    />
+    <meta name="theme-color" content="#22201d" />
+    <meta name="author" content="Northwind Editions" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Valkarn | The Saga of the Nine Gates" />
+    <meta
+      property="og:description"
+      content="Nine gates, seventy-four volumes, one long road north. The official home of the Valkarn saga: the world, the chronicles, the characters, the makers and the fellowship."
+    />
+    <meta property="og:image" content="assets/img/og-image.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="assets/fonts/cinzel-latin.woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="assets/fonts/mulish-latin.woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body class="home is-loading">
+    <svg
+      aria-hidden="true"
+      class="sr-only"
+      xmlns="http://www.w3.org/2000/svg"
+      focusable="false"
+    >
+      <symbol id="i-diamond" viewBox="0 0 8 9">
+        <path d="M4 0l4 4.5L4 9 0 4.5z" fill="currentColor" />
+      </symbol>
+      <symbol id="i-diamond-o" viewBox="0 0 14 14">
+        <path
+          d="M7 1l6 6-6 6-6-6z"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.2"
+        />
+      </symbol>
+      <symbol id="i-orn-x" viewBox="0 0 15 36">
+        <path d="M14.5 18H7" stroke="currentColor" stroke-width="1" />
+        <path d="M7 18l-3.5-3.2v6.4z" fill="currentColor" />
+        <path d="M2 10.5v15" stroke="currentColor" stroke-width="1" />
+        <path d="M0 18h2" stroke="currentColor" stroke-width="1" />
+      </symbol>
+      <symbol id="i-sword-h" viewBox="0 0 1200 22" preserveAspectRatio="none">
+        <path d="M0 11h520" stroke="currentColor" stroke-width="1" />
+        <path d="M680 11h520" stroke="currentColor" stroke-width="1" />
+        <path d="M600 3l9 8-9 8-9-8z" fill="currentColor" />
+        <path
+          d="M556 11l14-5v10zM644 11l-14-5v10z"
+          fill="currentColor"
+          opacity=".6"
+        />
+      </symbol>
+      <symbol id="i-sword-v" viewBox="0 0 22 169" preserveAspectRatio="none">
+        <path d="M11 0v40" stroke="currentColor" stroke-width="1" />
+        <path d="M11 44l7 7-7 7-7-7z" fill="currentColor" />
+        <path d="M11 62v107" stroke="currentColor" stroke-width="1" />
+      </symbol>
+      <symbol id="i-menu" viewBox="0 0 25 14">
+        <path
+          d="M2 2h21M6 7h17M10 12h13"
+          stroke="currentColor"
+          stroke-width="1.6"
+          stroke-linecap="round"
+        />
+      </symbol>
+      <symbol id="i-close" viewBox="0 0 24 13">
+        <path
+          d="M2 6.5h20M8 1.5l-6 5 6 5"
+          stroke="currentColor"
+          stroke-width="1.6"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          fill="none"
+        />
+      </symbol>
+      <symbol id="i-x" viewBox="0 0 16 16">
+        <path
+          d="M3 3l10 10M13 3L3 13"
+          stroke="currentColor"
+          stroke-width="1.6"
+          stroke-linecap="round"
+        />
+      </symbol>
+      <symbol id="i-arrow-r" viewBox="0 0 9 14">
+        <path
+          d="M1 1l6 6-6 6"
+          stroke="currentColor"
+          stroke-width="1.6"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="i-arrow-l" viewBox="0 0 9 14">
+        <path
+          d="M8 1L2 7l6 6"
+          stroke="currentColor"
+          stroke-width="1.6"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="i-corner" viewBox="0 0 56 48">
+        <path
+          d="M56 1H28L14 24l14 23h28"
+          fill="none"
+          stroke="currentColor"
+          stroke-opacity=".35"
+        />
+        <path d="M20 24l4-4 4 4-4 4z" fill="currentColor" fill-opacity=".5" />
+      </symbol>
+      <symbol id="i-edge" viewBox="0 0 8 48">
+        <path
+          d="M7 0H1v48h6"
+          fill="none"
+          stroke="currentColor"
+          stroke-opacity=".35"
+        />
+      </symbol>
+      <symbol id="i-origin" viewBox="0 0 20 20">
+        <path
+          d="M10 2l7 8-7 8-7-8z"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.3"
+        />
+        <circle cx="10" cy="10" r="2" fill="currentColor" />
+      </symbol>
+      <symbol id="i-family" viewBox="0 0 20 20">
+        <circle
+          cx="7"
+          cy="7"
+          r="3"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.3"
+        />
+        <circle
+          cx="14"
+          cy="9"
+          r="2.2"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.3"
+        />
+        <path
+          d="M2 17c1-3 3.5-4.5 5-4.5S11 14 12 17"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.3"
+        />
+      </symbol>
+      <symbol id="i-status" viewBox="0 0 20 20">
+        <path
+          d="M3 11l4 4 10-10"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.6"
+          stroke-linecap="round"
+        />
+      </symbol>
+      <symbol id="i-role" viewBox="0 0 20 20">
+        <path
+          d="M10 2l2.4 5 5.6.6-4.2 3.8 1.2 5.6L10 14.2 5 17l1.2-5.6L2 7.6 7.6 7z"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.2"
+        />
+      </symbol>
+      <symbol id="i-quill" viewBox="0 0 20 20">
+        <path
+          d="M3 17S4 9 11 5c3-1.7 6-2 6-2s0 3-1.7 6C11.5 16 3 17 3 17z"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.3"
+        />
+        <path d="M3 17l6-6" stroke="currentColor" stroke-width="1.3" />
+      </symbol>
+    </svg>
+
+    <div class="veil" aria-hidden="true"></div>
+
+    <div class="loader">
+      <div class="loader__screen">
+        <img
+          class="loader__bg"
+          src="assets/img/loader-collage.jpg"
+          alt=""
+          fetchpriority="high"
+          decoding="sync"
+        />
+        <div class="loader__inner">
+          <div class="loader__rail loader__rail--top">
+            <div class="loader__fill" data-loader-fill></div>
+            <span class="loader__count" data-loader-count="top">0</span>
+          </div>
+          <div class="loader__logo">
+            <span class="wordmark wordmark--xl"
+              >VALKARN<span class="wordmark__sub"
+                >The Saga of the Nine Gates</span
+              ></span
+            >
+            <button
+              data-enter
+              class="btn"
+              type="button"
+              style="margin-top: 2.5rem"
+            >
+              <svg
+                class="btn__orn btn__orn--l"
+                width="15"
+                height="36"
+                aria-hidden="true"
+              >
+                <use href="#i-orn-x"></use></svg
+              ><span class="btn__label">Enter</span
+              ><svg
+                class="btn__orn btn__orn--r"
+                width="15"
+                height="36"
+                aria-hidden="true"
+              >
+                <use href="#i-orn-x"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="loader__rail loader__rail--bottom">
+            <div class="loader__fill" data-loader-fill></div>
+            <span class="loader__count" data-loader-count="bottom">0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="header">
+      <a href="#main" class="skip-link">Skip to main content</a>
+      <div class="header__orn hide-mobile" aria-hidden="true">
+        <svg class="" width="8" height="48" aria-hidden="true">
+          <use href="#i-edge"></use>
+        </svg>
+      </div>
+      <div class="header__cell header__cell--left">
+        <button
+          class="menu-btn"
+          type="button"
+          data-menu-open
+          aria-expanded="false"
+          aria-controls="menu-panel"
+        >
+          <svg class="icon" width="25" height="14" aria-hidden="true">
+            <use href="#i-menu"></use></svg
+          ><span>Menu</span>
+        </button>
+      </div>
+      <div class="header__orn hide-mobile" aria-hidden="true">
+        <svg class="" width="56" height="48" aria-hidden="true">
+          <use href="#i-corner"></use>
+        </svg>
+      </div>
+      <div class="header__cell header__cell--mid">
+        <a href="index.html" class="header__brand" aria-label="Valkarn — home"
+          ><span class="wordmark wordmark--sm">VALKARN</span></a
+        >
+      </div>
+      <div
+        class="header__orn hide-mobile"
+        aria-hidden="true"
+        style="transform: scaleX(-1)"
+      >
+        <svg class="" width="56" height="48" aria-hidden="true">
+          <use href="#i-corner"></use>
+        </svg>
+      </div>
+      <div class="header__cell header__cell--right">
+        <a href="news.html" class="header__link hide-mobile"
+          ><svg class="icon" width="8" height="9" aria-hidden="true">
+            <use href="#i-diamond"></use></svg
+          ><span>News</span></a
+        >
+      </div>
+      <div
+        class="header__orn hide-mobile"
+        aria-hidden="true"
+        style="transform: scaleX(-1)"
+      >
+        <svg class="" width="8" height="48" aria-hidden="true">
+          <use href="#i-edge"></use>
+        </svg>
+      </div>
+    </header>
+
+    <div class="menu-overlay" hidden-aria></div>
+    <div class="menu-panel" id="menu-panel">
+      <div class="menu-panel__inner">
+        <button class="menu-close" type="button" data-menu-close>
+          <svg class="icon" width="24" height="13" aria-hidden="true">
+            <use href="#i-close"></use></svg
+          ><span>Close</span>
+        </button>
+        <nav class="menu-nav" aria-label="Main">
+          <ul>
+            <li>
+              <a href="universe.html"
+                ><span class="num">01</span><span>The World</span></a
+              >
+            </li>
+            <li>
+              <a href="chronicles.html"
+                ><span class="num">02</span><span>The Chronicles</span></a
+              >
+            </li>
+            <li>
+              <a href="characters.html"
+                ><span class="num">03</span><span>The Characters</span></a
+              >
+            </li>
+            <li>
+              <a href="makers.html"
+                ><span class="num">04</span><span>The Makers</span></a
+              >
+            </li>
+            <li>
+              <a href="fellowship.html"
+                ><span class="num">05</span><span>The Fellowship</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div>
+          <p class="menu-foot" style="margin-bottom: 0.75rem">
+            <a href="news.html">News</a><a href="fellowship.html">Fellowship</a
+            ><a href="404.html">Shop</a>
+          </p>
+          <p class="menu-foot">
+            <a href="#">Legal notice</a><a href="#">Privacy</a
+            ><a href="#">Cookies</a><a href="#">Press kit</a
+            ><a href="#">Contact</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="stage" aria-hidden="true">
+      <div class="stage__scene">
+        <img src="assets/img/gate-01.jpg" alt="" fetchpriority="high" />
+      </div>
+      <div class="stage__scene">
+        <img src="assets/img/gate-02.jpg" alt="" loading="lazy" />
+      </div>
+      <div class="stage__scene">
+        <img src="assets/img/gate-03.jpg" alt="" loading="lazy" />
+      </div>
+      <div class="stage__scene">
+        <img src="assets/img/gate-04.jpg" alt="" loading="lazy" />
+      </div>
+      <div class="stage__scene">
+        <img src="assets/img/gate-05.jpg" alt="" loading="lazy" />
+      </div>
+      <canvas class="stage__dust"></canvas>
+      <div class="stage__flash"></div>
+    </div>
+    <main id="main" class="gates">
+      <article class="gate" data-gate="0" aria-label="Gate 01 — The World">
+        <span class="badge" data-delay="0">Gate 01</span>
+        <h2 class="t-gate">
+          <span class="tr" data-animation="char">The World</span>
+        </h2>
+        <p class="gate__meta" data-reveal>
+          Nine gates were raised at the edge of the known map. Valkarn has
+          walked through eight of them.
+        </p>
+        <a class="btn" href="universe.html"
+          ><svg
+            class="btn__orn btn__orn--l"
+            width="15"
+            height="36"
+            aria-hidden="true"
+          >
+            <use href="#i-orn-x"></use></svg
+          ><span class="btn__label">Enter the world</span
+          ><svg
+            class="btn__orn btn__orn--r"
+            width="15"
+            height="36"
+            aria-hidden="true"
+          >
+            <use href="#i-orn-x"></use></svg
+        ></a>
+      </article>
+      <article class="gate" data-gate="1" aria-label="Gate 02 — The Chronicles">
+        <span class="badge" data-delay="0">Gate 02</span>
+        <h2 class="t-gate">
+          <span class="tr" data-animation="char">The Chronicles</span>
+        </h2>
+        <p class="gate__meta" data-reveal>
+          Seventy-four volumes, five series, one long road north.
+        </p>
+        <a class="btn" href="chronicles.html"
+          ><svg
+            class="btn__orn btn__orn--l"
+            width="15"
+            height="36"
+            aria-hidden="true"
+          >
+            <use href="#i-orn-x"></use></svg
+          ><span class="btn__label">Open the chronicles</span
+          ><svg
+            class="btn__orn btn__orn--r"
+            width="15"
+            height="36"
+            aria-hidden="true"
+          >
+            <use href="#i-orn-x"></use></svg
+        ></a>
+      </article>
+      <article class="gate" data-gate="2" aria-label="Gate 03 — The Characters">
+        <span class="badge" data-delay="0">Gate 03</span>
+        <h2 class="t-gate">
+          <span class="tr" data-animation="char">The Characters</span>
+        </h2>
+        <p class="gate__meta" data-reveal>
+          Companions of a day or of a lifetime.
+        </p>
+        <a class="btn" href="characters.html"
+          ><svg
+            class="btn__orn btn__orn--l"
+            width="15"
+            height="36"
+            aria-hidden="true"
+          >
+            <use href="#i-orn-x"></use></svg
+          ><span class="btn__label">Meet the characters</span
+          ><svg
+            class="btn__orn btn__orn--r"
+            width="15"
+            height="36"
+            aria-hidden="true"
+          >
+            <use href="#i-orn-x"></use></svg
+        ></a>
+      </article>
+      <article class="gate" data-gate="3" aria-label="Gate 04 — The Makers">
+        <span class="badge" data-delay="0">Gate 04</span>
+        <h2 class="t-gate">
+          <span class="tr" data-animation="char">The Makers</span>
+        </h2>
+        <p class="gate__meta" data-reveal>
+          Two founders, a dozen hands, forty-eight years of ink.
+        </p>
+        <a class="btn" href="makers.html"
+          ><svg
+            class="btn__orn btn__orn--l"
+            width="15"
+            height="36"
+            aria-hidden="true"
+          >
+            <use href="#i-orn-x"></use></svg
+          ><span class="btn__label">Meet the makers</span
+          ><svg
+            class="btn__orn btn__orn--r"
+            width="15"
+            height="36"
+            aria-hidden="true"
+          >
+            <use href="#i-orn-x"></use></svg
+        ></a>
+      </article>
+      <article class="gate" data-gate="4" aria-label="Gate 05 — The Fellowship">
+        <span class="badge" data-delay="0">Gate 05</span>
+        <h2 class="t-gate">
+          <span class="tr" data-animation="char">The Fellowship</span>
+        </h2>
+        <p class="gate__meta" data-reveal>
+          Readers who have kept the fires lit since the first printing.
+        </p>
+        <a class="btn" href="fellowship.html"
+          ><svg
+            class="btn__orn btn__orn--l"
+            width="15"
+            height="36"
+            aria-hidden="true"
+          >
+            <use href="#i-orn-x"></use></svg
+          ><span class="btn__label">Join the fellowship</span
+          ><svg
+            class="btn__orn btn__orn--r"
+            width="15"
+            height="36"
+            aria-hidden="true"
+          >
+            <use href="#i-orn-x"></use></svg
+        ></a>
+      </article>
+    </main>
+    <nav class="anchor-nav" aria-label="Gates">
+      <ul>
+        <li>
+          <button type="button" data-door="0"><span>The World</span></button>
+        </li>
+        <li>
+          <button type="button" data-door="1"><span>Chronicles</span></button>
+        </li>
+        <li>
+          <button type="button" data-door="2"><span>Characters</span></button>
+        </li>
+        <li>
+          <button type="button" data-door="3"><span>Makers</span></button>
+        </li>
+        <li>
+          <button type="button" data-door="4"><span>Fellowship</span></button>
+        </li>
+      </ul>
+    </nav>
+    <div class="scroll-hint" aria-hidden="true">
+      <p>
+        <span class="label"><span>Scroll to explore</span></span
+        ><span class="line"></span>
+      </p>
+    </div>
+
+    <div class="audio-toggle">
+      <button type="button" aria-pressed="false" title="Ambient sound">
+        <span class="bar"></span><span class="bar"></span
+        ><span class="bar"></span><span class="bar"></span
+        ><span class="bar"></span>
+        <span class="sr-only">Toggle ambient sound</span>
+      </button>
+    </div>
+    <script src="assets/js/app.js" defer></script>
+    <script src="assets/js/gates.js" defer></script>
+  </body>
+</html>

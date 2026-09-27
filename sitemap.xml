@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://example.com/index.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://example.com/universe.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://example.com/chronicles.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://example.com/characters.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://example.com/makers.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://example.com/fellowship.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://example.com/news.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://example.com/article.html</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://example.com/volume.html</loc><changefreq>monthly</changefreq></url>
+</urlset>

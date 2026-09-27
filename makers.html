@@ -1,0 +1,751 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The makers | Valkarn</title>
+    <meta
+      name="description"
+      content="Halvard Ness, Mira Kowalska and the writers, artists and colourists who have carried the Valkarn saga since 1978."
+    />
+    <meta name="theme-color" content="#22201d" />
+    <meta name="author" content="Northwind Editions" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="The makers | Valkarn" />
+    <meta
+      property="og:description"
+      content="Halvard Ness, Mira Kowalska and the writers, artists and colourists who have carried the Valkarn saga since 1978."
+    />
+    <meta property="og:image" content="assets/img/og-image.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="assets/fonts/cinzel-latin.woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="assets/fonts/mulish-latin.woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body class="is-loading">
+    <svg
+      aria-hidden="true"
+      class="sr-only"
+      xmlns="http://www.w3.org/2000/svg"
+      focusable="false"
+    >
+      <symbol id="i-diamond" viewBox="0 0 8 9">
+        <path d="M4 0l4 4.5L4 9 0 4.5z" fill="currentColor" />
+      </symbol>
+      <symbol id="i-diamond-o" viewBox="0 0 14 14">
+        <path
+          d="M7 1l6 6-6 6-6-6z"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.2"
+        />
+      </symbol>
+      <symbol id="i-orn-x" viewBox="0 0 15 36">
+        <path d="M14.5 18H7" stroke="currentColor" stroke-width="1" />
+        <path d="M7 18l-3.5-3.2v6.4z" fill="currentColor" />
+        <path d="M2 10.5v15" stroke="currentColor" stroke-width="1" />
+        <path d="M0 18h2" stroke="currentColor" stroke-width="1" />
+      </symbol>
+      <symbol id="i-sword-h" viewBox="0 0 1200 22" preserveAspectRatio="none">
+        <path d="M0 11h520" stroke="currentColor" stroke-width="1" />
+        <path d="M680 11h520" stroke="currentColor" stroke-width="1" />
+        <path d="M600 3l9 8-9 8-9-8z" fill="currentColor" />
+        <path
+          d="M556 11l14-5v10zM644 11l-14-5v10z"
+          fill="currentColor"
+          opacity=".6"
+        />
+      </symbol>
+      <symbol id="i-sword-v" viewBox="0 0 22 169" preserveAspectRatio="none">
+        <path d="M11 0v40" stroke="currentColor" stroke-width="1" />
+        <path d="M11 44l7 7-7 7-7-7z" fill="currentColor" />
+        <path d="M11 62v107" stroke="currentColor" stroke-width="1" />
+      </symbol>
+      <symbol id="i-menu" viewBox="0 0 25 14">
+        <path
+          d="M2 2h21M6 7h17M10 12h13"
+          stroke="currentColor"
+          stroke-width="1.6"
+          stroke-linecap="round"
+        />
+      </symbol>
+      <symbol id="i-close" viewBox="0 0 24 13">
+        <path
+          d="M2 6.5h20M8 1.5l-6 5 6 5"
+          stroke="currentColor"
+          stroke-width="1.6"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          fill="none"
+        />
+      </symbol>
+      <symbol id="i-x" viewBox="0 0 16 16">
+        <path
+          d="M3 3l10 10M13 3L3 13"
+          stroke="currentColor"
+          stroke-width="1.6"
+          stroke-linecap="round"
+        />
+      </symbol>
+      <symbol id="i-arrow-r" viewBox="0 0 9 14">
+        <path
+          d="M1 1l6 6-6 6"
+          stroke="currentColor"
+          stroke-width="1.6"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="i-arrow-l" viewBox="0 0 9 14">
+        <path
+          d="M8 1L2 7l6 6"
+          stroke="currentColor"
+          stroke-width="1.6"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="i-corner" viewBox="0 0 56 48">
+        <path
+          d="M56 1H28L14 24l14 23h28"
+          fill="none"
+          stroke="currentColor"
+          stroke-opacity=".35"
+        />
+        <path d="M20 24l4-4 4 4-4 4z" fill="currentColor" fill-opacity=".5" />
+      </symbol>
+      <symbol id="i-edge" viewBox="0 0 8 48">
+        <path
+          d="M7 0H1v48h6"
+          fill="none"
+          stroke="currentColor"
+          stroke-opacity=".35"
+        />
+      </symbol>
+      <symbol id="i-origin" viewBox="0 0 20 20">
+        <path
+          d="M10 2l7 8-7 8-7-8z"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.3"
+        />
+        <circle cx="10" cy="10" r="2" fill="currentColor" />
+      </symbol>
+      <symbol id="i-family" viewBox="0 0 20 20">
+        <circle
+          cx="7"
+          cy="7"
+          r="3"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.3"
+        />
+        <circle
+          cx="14"
+          cy="9"
+          r="2.2"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.3"
+        />
+        <path
+          d="M2 17c1-3 3.5-4.5 5-4.5S11 14 12 17"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.3"
+        />
+      </symbol>
+      <symbol id="i-status" viewBox="0 0 20 20">
+        <path
+          d="M3 11l4 4 10-10"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.6"
+          stroke-linecap="round"
+        />
+      </symbol>
+      <symbol id="i-role" viewBox="0 0 20 20">
+        <path
+          d="M10 2l2.4 5 5.6.6-4.2 3.8 1.2 5.6L10 14.2 5 17l1.2-5.6L2 7.6 7.6 7z"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.2"
+        />
+      </symbol>
+      <symbol id="i-quill" viewBox="0 0 20 20">
+        <path
+          d="M3 17S4 9 11 5c3-1.7 6-2 6-2s0 3-1.7 6C11.5 16 3 17 3 17z"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.3"
+        />
+        <path d="M3 17l6-6" stroke="currentColor" stroke-width="1.3" />
+      </symbol>
+    </svg>
+
+    <div class="veil" aria-hidden="true"></div>
+
+    <div class="loader">
+      <div class="loader__screen">
+        <img
+          class="loader__bg"
+          src="assets/img/loader-collage.jpg"
+          alt=""
+          fetchpriority="high"
+          decoding="sync"
+        />
+        <div class="loader__inner">
+          <div class="loader__rail loader__rail--top">
+            <div class="loader__fill" data-loader-fill></div>
+            <span class="loader__count" data-loader-count="top">0</span>
+          </div>
+          <div class="loader__logo">
+            <span class="wordmark wordmark--xl"
+              >VALKARN<span class="wordmark__sub"
+                >The Saga of the Nine Gates</span
+              ></span
+            >
+          </div>
+          <div class="loader__rail loader__rail--bottom">
+            <div class="loader__fill" data-loader-fill></div>
+            <span class="loader__count" data-loader-count="bottom">0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="header">
+      <a href="#main" class="skip-link">Skip to main content</a>
+      <div class="header__orn hide-mobile" aria-hidden="true">
+        <svg class="" width="8" height="48" aria-hidden="true">
+          <use href="#i-edge"></use>
+        </svg>
+      </div>
+      <div class="header__cell header__cell--left">
+        <button
+          class="menu-btn"
+          type="button"
+          data-menu-open
+          aria-expanded="false"
+          aria-controls="menu-panel"
+        >
+          <svg class="icon" width="25" height="14" aria-hidden="true">
+            <use href="#i-menu"></use></svg
+          ><span>Menu</span>
+        </button>
+      </div>
+      <div class="header__orn hide-mobile" aria-hidden="true">
+        <svg class="" width="56" height="48" aria-hidden="true">
+          <use href="#i-corner"></use>
+        </svg>
+      </div>
+      <div class="header__cell header__cell--mid">
+        <a href="index.html" class="header__brand" aria-label="Valkarn — home"
+          ><span class="wordmark wordmark--sm">VALKARN</span></a
+        >
+      </div>
+      <div
+        class="header__orn hide-mobile"
+        aria-hidden="true"
+        style="transform: scaleX(-1)"
+      >
+        <svg class="" width="56" height="48" aria-hidden="true">
+          <use href="#i-corner"></use>
+        </svg>
+      </div>
+      <div class="header__cell header__cell--right">
+        <a href="news.html" class="header__link hide-mobile"
+          ><svg class="icon" width="8" height="9" aria-hidden="true">
+            <use href="#i-diamond"></use></svg
+          ><span>News</span></a
+        >
+      </div>
+      <div
+        class="header__orn hide-mobile"
+        aria-hidden="true"
+        style="transform: scaleX(-1)"
+      >
+        <svg class="" width="8" height="48" aria-hidden="true">
+          <use href="#i-edge"></use>
+        </svg>
+      </div>
+    </header>
+
+    <div class="menu-overlay" hidden-aria></div>
+    <div class="menu-panel" id="menu-panel">
+      <div class="menu-panel__inner">
+        <button class="menu-close" type="button" data-menu-close>
+          <svg class="icon" width="24" height="13" aria-hidden="true">
+            <use href="#i-close"></use></svg
+          ><span>Close</span>
+        </button>
+        <nav class="menu-nav" aria-label="Main">
+          <ul>
+            <li>
+              <a href="universe.html"
+                ><span class="num">01</span><span>The World</span></a
+              >
+            </li>
+            <li>
+              <a href="chronicles.html"
+                ><span class="num">02</span><span>The Chronicles</span></a
+              >
+            </li>
+            <li>
+              <a href="characters.html"
+                ><span class="num">03</span><span>The Characters</span></a
+              >
+            </li>
+            <li>
+              <a href="makers.html"
+                ><span class="num">04</span><span>The Makers</span></a
+              >
+            </li>
+            <li>
+              <a href="fellowship.html"
+                ><span class="num">05</span><span>The Fellowship</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div>
+          <p class="menu-foot" style="margin-bottom: 0.75rem">
+            <a href="news.html">News</a><a href="fellowship.html">Fellowship</a
+            ><a href="404.html">Shop</a>
+          </p>
+          <p class="menu-foot">
+            <a href="#">Legal notice</a><a href="#">Privacy</a
+            ><a href="#">Cookies</a><a href="#">Press kit</a
+            ><a href="#">Contact</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <main id="main">
+      <section class="hero" data-hero>
+        <div class="hero__bg">
+          <img src="assets/img/gate-04.jpg" alt="" fetchpriority="high" />
+        </div>
+        <div class="hero__back">
+          <a class="link-back" href="index.html" data-reveal
+            ><svg class="icon" width="9" height="14" aria-hidden="true">
+              <use href="#i-arrow-l"></use>
+            </svg>
+            Back to the gates</a
+          >
+        </div>
+        <div class="hero__badge">
+          <span class="badge badge--outline" data-delay="0">Gate 04</span>
+        </div>
+        <div class="hero__title">
+          <h1 class="t-hero">
+            <span class="tr" data-animation="line" data-delay="0"
+              >The makers of Valkarn</span
+            >
+          </h1>
+        </div>
+        <div class="hero__intro on-dark">
+          <div
+            class="sword-v hide-mobile"
+            aria-hidden="true"
+            style="width: 22px"
+          >
+            <svg class="" width="22" height="40" aria-hidden="true">
+              <use href="#i-sword-v"></use></svg
+            ><span
+              class="sword-v__line"
+              style="
+                background: linear-gradient(
+                  to bottom,
+                  rgba(239, 238, 237, 0.6),
+                  rgba(239, 238, 237, 0)
+                );
+              "
+            ></span>
+          </div>
+          <div class="lede drop-cap" data-reveal data-delay="0.25">
+            <p>
+              Created in 1977 by the writer Halvard Ness and the artist Mira
+              Kowalska for a weekly magazine, the saga has since passed through
+              a dozen pairs of hands without losing its temperature.
+            </p>
+          </div>
+        </div>
+        <img
+          class="hero__brush"
+          src="assets/img/brush-light.png"
+          alt=""
+          aria-hidden="true"
+        />
+      </section>
+
+      <section class="sect sect--pad grid">
+        <div class="c-half-l">
+          <div class="badge-stack">
+            <span class="badge" data-delay="0">The gods set a man</span
+            ><span class="badge" data-delay="0.25">against his own fate</span>
+          </div>
+          <h2 class="t-sect">
+            <span class="tr" data-animation="line" data-delay="0"
+              >A universe renewed with every volume</span
+            >
+          </h2>
+          <div class="rule-title" aria-hidden="true">
+            <svg class="icon" width="8" height="9" aria-hidden="true">
+              <use href="#i-diamond"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="c-half-r wysiwyg drop-cap" data-reveal data-delay="0.15">
+          <p>
+            Forty-eight years and seventy-four volumes after a scriptwriter
+            promised his editor six episodes, the saga is still running. Other
+            hands have taken up the work since — and the spin-off shelf now
+            reaches back into the characters' earliest days.
+          </p>
+          <p>
+            What has not changed is the division of labour the founders settled
+            on in 1978: the writer builds the trap, the artist decides how cold
+            it feels.
+          </p>
+        </div>
+      </section>
+
+      <section class="sect sect--pad-b grid">
+        <div class="c-main">
+          <h2 class="t-sect">
+            <span class="tr" data-animation="line" data-delay="0"
+              >All the makers</span
+            >
+          </h2>
+          <div class="card-grid card-grid--wide" style="margin-top: 3rem">
+            <article class="card card--person" data-cat="valkarn">
+              <div class="card__media">
+                <img
+                  src="assets/img/author-halvard.jpg"
+                  alt="Halvard Ness"
+                  loading="lazy"
+                />
+              </div>
+              <h3 class="card__title">Halvard Ness</h3>
+              <p class="card__sub">Writer · co-creator</p>
+              <p
+                style="
+                  margin-top: 0.75rem;
+                  font-size: 0.9rem;
+                  color: var(--dark-grey);
+                "
+              >
+                Norwegian journalist turned scriptwriter. Pitched a foundling
+                story to a weekly magazine in 1977, was told it would run for
+                six episodes, and wrote the series for thirty-eight years.
+              </p>
+            </article>
+            <article class="card card--person" data-cat="valkarn">
+              <div class="card__media">
+                <img
+                  src="assets/img/author-mira.jpg"
+                  alt="Mira Kowalska"
+                  loading="lazy"
+                />
+              </div>
+              <h3 class="card__title">Mira Kowalska</h3>
+              <p class="card__sub">Artist · co-creator</p>
+              <p
+                style="
+                  margin-top: 0.75rem;
+                  font-size: 0.9rem;
+                  color: var(--dark-grey);
+                "
+              >
+                Trained in Kraków, published across three countries before she
+                was thirty. Her brushwork — dry, scratchy, almost impatient — is
+                the reason the north of this saga feels cold.
+              </p>
+            </article>
+            <article class="card card--person" data-cat="young-valkarn">
+              <div class="card__media">
+                <img
+                  src="assets/img/author-iona.jpg"
+                  alt="Iona Brecht"
+                  loading="lazy"
+                />
+              </div>
+              <h3 class="card__title">Iona Brecht</h3>
+              <p class="card__sub">Writer</p>
+              <p
+                style="
+                  margin-top: 0.75rem;
+                  font-size: 0.9rem;
+                  color: var(--dark-grey);
+                "
+              >
+                Took over the main series after two volumes of Young Valkarn
+                convinced the publisher she understood the household better than
+                anyone.
+              </p>
+            </article>
+            <article class="card card--person" data-cat="sigrun">
+              <div class="card__media">
+                <img
+                  src="assets/img/author-tomas.jpg"
+                  alt="Tomás Ferreira"
+                  loading="lazy"
+                />
+              </div>
+              <h3 class="card__title">Tomás Ferreira</h3>
+              <p class="card__sub">Artist</p>
+              <p
+                style="
+                  margin-top: 0.75rem;
+                  font-size: 0.9rem;
+                  color: var(--dark-grey);
+                "
+              >
+                Came to the saga from Sigrun of Stormhold. Keeps Kowalska's
+                grain and adds a wider, colder camera.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="sect sect--pad grid" style="background: #fff">
+        <div class="c-main">
+          <h2 class="t-sect">
+            <span class="tr" data-animation="line" data-delay="0"
+              >Forty-eight years in six lines</span
+            >
+          </h2>
+          <div style="margin-top: 2.5rem">
+            <div
+              data-reveal
+              data-delay="0.00"
+              style="
+                display: grid;
+                grid-template-columns: 5.5rem 1fr;
+                gap: 1.5rem;
+                padding: 1.5rem 0;
+                border-top: 1px solid rgba(34, 32, 29, 0.12);
+              "
+            >
+              <span
+                class="display"
+                style="font-weight: 900; color: var(--gold-deep)"
+                >1977</span
+              >
+              <p style="color: var(--dark-grey)">
+                Halvard Ness pitches a six-episode story about a foundling. It
+                is accepted on the condition that it ends by Christmas.
+              </p>
+            </div>
+            <div
+              data-reveal
+              data-delay="0.06"
+              style="
+                display: grid;
+                grid-template-columns: 5.5rem 1fr;
+                gap: 1.5rem;
+                padding: 1.5rem 0;
+                border-top: 1px solid rgba(34, 32, 29, 0.12);
+              "
+            >
+              <span
+                class="display"
+                style="font-weight: 900; color: var(--gold-deep)"
+                >1978</span
+              >
+              <p style="color: var(--dark-grey)">
+                Mira Kowalska draws the first volume. It does not end by
+                Christmas.
+              </p>
+            </div>
+            <div
+              data-reveal
+              data-delay="0.12"
+              style="
+                display: grid;
+                grid-template-columns: 5.5rem 1fr;
+                gap: 1.5rem;
+                padding: 1.5rem 0;
+                border-top: 1px solid rgba(34, 32, 29, 0.12);
+              "
+            >
+              <span
+                class="display"
+                style="font-weight: 900; color: var(--gold-deep)"
+                >1991</span
+              >
+              <p style="color: var(--dark-grey)">
+                Volume twenty. The saga stops being an adventure series and
+                becomes a family one.
+              </p>
+            </div>
+            <div
+              data-reveal
+              data-delay="0.18"
+              style="
+                display: grid;
+                grid-template-columns: 5.5rem 1fr;
+                gap: 1.5rem;
+                padding: 1.5rem 0;
+                border-top: 1px solid rgba(34, 32, 29, 0.12);
+              "
+            >
+              <span
+                class="display"
+                style="font-weight: 900; color: var(--gold-deep)"
+                >2011</span
+              >
+              <p style="color: var(--dark-grey)">
+                Young Valkarn opens the prequel shelf and brings a new
+                generation of readers in sideways.
+              </p>
+            </div>
+            <div
+              data-reveal
+              data-delay="0.24"
+              style="
+                display: grid;
+                grid-template-columns: 5.5rem 1fr;
+                gap: 1.5rem;
+                padding: 1.5rem 0;
+                border-top: 1px solid rgba(34, 32, 29, 0.12);
+              "
+            >
+              <span
+                class="display"
+                style="font-weight: 900; color: var(--gold-deep)"
+                >2019</span
+              >
+              <p style="color: var(--dark-grey)">
+                Kowalska hands over the brush to Tomás Ferreira after forty-one
+                years.
+              </p>
+            </div>
+            <div
+              data-reveal
+              data-delay="0.30"
+              style="
+                display: grid;
+                grid-template-columns: 5.5rem 1fr;
+                gap: 1.5rem;
+                padding: 1.5rem 0;
+                border-top: 1px solid rgba(34, 32, 29, 0.12);
+              "
+            >
+              <span
+                class="display"
+                style="font-weight: 900; color: var(--gold-deep)"
+                >2026</span
+              >
+              <p style="color: var(--dark-grey)">
+                Volume forty-three, and a signature for five more.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sect sect--pad grid">
+        <div class="c-half-l" data-reveal>
+          <div class="panel">
+            <p class="eyebrow">In their words</p>
+            <blockquote class="wysiwyg" style="margin-top: 1rem">
+              <p
+                style="
+                  font-family: var(--display);
+                  font-size: 1.35rem;
+                  line-height: 1.5;
+                  color: var(--dark);
+                "
+              >
+                “We never wrote a hero. We wrote a man who wants to be left
+                alone in a world that has no vocabulary for it.”
+              </p>
+            </blockquote>
+            <p class="eyebrow" style="margin-top: 1.5rem">Halvard Ness, 1994</p>
+          </div>
+        </div>
+        <div class="c-half-r" style="align-self: center">
+          <div class="wysiwyg">
+            <h3 class="t-sub">Working method</h3>
+            <p>
+              Scripts arrive as forty-six numbered pages with no dialogue in the
+              action lines. Layouts come back as thumbnails the size of a
+              matchbox. Nothing is inked until both of them agree the silent
+              panels are silent enough.
+            </p>
+            <p>
+              Colour has been part of the storytelling since volume
+              twenty-eight, when Lise Marchand replaced the flat palettes with
+              the bruised greys the series is known for.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="sect grid next-gate">
+        <div class="c-main">
+          <p class="next-gate__hint" data-reveal>Keep going</p>
+          <span class="next-gate__dash" aria-hidden="true"></span>
+          <div style="display: flex; justify-content: center">
+            <span class="badge badge--gold" data-delay="0">Gate 05</span>
+          </div>
+        </div>
+        <a
+          class="next-gate__link c-full"
+          href="fellowship.html"
+          aria-label="The Fellowship"
+        >
+          <h2 class="">
+            <span class="tr" data-animation="line" data-delay="0"
+              >The Fellowship</span
+            >
+          </h2>
+        </a>
+      </section>
+    </main>
+
+    <footer class="site-foot">
+      <div class="site-foot__inner">
+        <p>
+          © <span data-year>2026</span> Valkarn — Northwind Editions. All
+          characters and artwork are fictional.
+        </p>
+        <nav aria-label="Legal">
+          <a href="#">Legal notice</a><a href="#">Privacy</a
+          ><a href="#">Cookies</a><a href="#">Press kit</a
+          ><a href="#">Contact</a>
+        </nav>
+      </div>
+    </footer>
+
+    <div class="audio-toggle">
+      <button type="button" aria-pressed="false" title="Ambient sound">
+        <span class="bar"></span><span class="bar"></span
+        ><span class="bar"></span><span class="bar"></span
+        ><span class="bar"></span>
+        <span class="sr-only">Toggle ambient sound</span>
+      </button>
+    </div>
+    <script src="assets/js/app.js" defer></script>
+  </body>
+</html>
